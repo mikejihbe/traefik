@@ -23,12 +23,3 @@ publish:
     email: $$docker_user_email
     tag: $$COMMIT
     
-
-
-notify:
-  webhook:
-    image: shippedrepos-docker-drone.bintray.io/drone-webhook
-    urls:
-      - "http://shipped-api.tx3.shipped-cisco.com/webhooks/drone"
-    on_success: true
-    on_failure: true
